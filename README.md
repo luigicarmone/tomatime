@@ -1,5 +1,8 @@
 # TOMATIME APP
 
+## ! IMPORTANTE !
+Quest'app è stata creata con lo scopo di mettere a frutto le conoscenze acquisite durante il corso 'Habeetat School' da parte di weBeetle. L'applicazione è stata creata in team, e tengo a ringraziare gli altri due ragazzi del team con cui ho lavorato: Francesco P. e Luca M..
+
 ## Installate Docker
 
 Per funzionare, l'applicazione necessita di un server [MongoDB](https://www.mongodb.com/).
