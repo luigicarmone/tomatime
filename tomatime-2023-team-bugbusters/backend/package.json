@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start": "sudo kill -9 $(sudo lsof -t -i:3000); nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "find-my-way": "^7.6.0",
+    "mongodb": "5.2",
+    "nodemon": "^2.0.22"
+  },
+  "name": "package.json",
+  "description": "Questo progetto implementa l'API che l'applicazione React utilizzerà per ricevere  i dati di cui necessita per funzionare",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC"
+}

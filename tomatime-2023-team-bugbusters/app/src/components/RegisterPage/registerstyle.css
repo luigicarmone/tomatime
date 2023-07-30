@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.backgroundRegister {
+    background-image: url("./Sfondo-Tomatime-ed-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.titleRegister {
+    background-image: url("./Raggruppa\ 19.png");
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    width: 427px;
+    height: 91px;
+    opacity: 1;
+}
+
+.breakRegister {
+    background-image: url("./Raggruppa\ 22.png");
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 330px;
+    height: 150px;
+    opacity: 1;
+}
+
+.contlogRegister {
+    background-color: white;
+    top: 30%;
+    left: 6%;
+    width: 420px;
+    height: 640px;
+    position: absolute;
+    border-radius: 32px;
+    box-shadow: 0px 3px 10px #00000033;
+    opacity: 1;
+}
+
+.signIn {
+    background-image: url("./sign\ in.png");
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    width: 156px;
+    height: 45px;
+}
+
+.formRegister {
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    width: 300px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    position: relative;
+    left: 46px;
+    width: 300px;
+    height: 25px;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    outline: none;
+    font-family: 'Sora', sans-serif;
+    z-index: 3;
+}
+
+.signInButton {
+    position: relative;
+    left: 40px;
+    border: none;
+    padding: 15px 35px;
+    width: 200px;
+    height: 60px;
+    background-color: #F4C3BB;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Sora', sans-serif;
+    border-radius: 10px;
+    top: 28px;
+}
+
+.signInButton:hover {
+    background-color: #D9391E;
+    transition: 0.7s;
+    font-family: 'Sora', sans-serif;
+}
+
+.registerSign {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    color: black;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.colorRegister {
+    color: #000;
+    font-family: 'Sora', sans-serif;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.eyeIconRegister1 {
+    position: absolute;
+    height: 50%;
+    cursor: pointer;
+    filter: grayscale(0%) brightness(100%);
+    top: 130px;
+    z-index: 4;
+    
+}
+
+.eyeIconRegister2 {
+    position: absolute;
+    height: 50%;
+    cursor: pointer;
+    filter: grayscale(0%) brightness(100%);
+    top: 200px;
+    z-index: 4;
+}
+
+.eyeIconRegister1:hover,
+.eyeIconRegister2:hover {
+    filter: grayscale(100%) brightness(0%);
+}
+
+.passwordVisibleRegister,
+.confirmPasswordVisibleRegister {
+    position: relative;
+    left: 46px;
+    width: 300px;
+    height: 25px;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    outline: none;
+    font-family: 'Sora', sans-serif;
+}
+
+.newsletter {
+    position: relative;
+    top: 25px;
+    left: 50px;
+    font-family: 'Sora', sans-serif;
+    font-size: 13px;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    top: 300px;
+    left: 45px;
+    width: 18px;
+    height: 18px;
+    accent-color: #ff0000;
+    border: 50px solid red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.formRegister input.invalid:not(:placeholder-shown):not(:focus),
+.formRegister input.name.invalid:not(:focus),
+.formRegister input.cpass.invalid:not(:focus) {
+  outline: 1px solid #ff000084;
+  outline-offset: 0.3rem;
+  border-radius: 0.1rem;
+}
+
+.formRegister input.invalid:not(:placeholder-shown):not(:focus) + span,
+.formRegister input.name.invalid:not(:focus) + span,
+.formRegister input.cpass.invalid:not(:focus) + span {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 100;
+  width: auto;
+  text-align: left;
+}
+
+.formRegister input.invalid:not(:placeholder-shown):not(:focus) + span::after,
+.formRegister input.name.invalid:not(:focus) + span::after,
+.formRegister input.cpass.invalid:not(:focus) + span::after {
+  content: attr(error);
+  font-size: 0.6rem;
+  font-weight: bold;
+  display: block;
+  z-index: 100;
+  width: auto;
+  height: auto;
+  color: red;
+  background-color: white;
+  border: 1.5px solid red;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+
+#nameError{
+    top: 35%;
+    left: 53%;
+}
+
+#emailError{
+    top: 97%;
+    left: 48%;
+}
+
+#passwordError{
+    top: 158%;
+    left: 45%;
+}
+
+#cpassError{
+    top: 220%;
+    left: 42%;
+}
+
+.formRegister input[type="submit"]:disabled {
+    background-color: #d93a1e96;
+    cursor: not-allowed;
+  }
+
+
+  /* ANIMAZIONI */
+  .slide-in-left{animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both}
+  @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+
+  .puff-in-center{animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both}
+  @keyframes puff-in-center{0%{transform:scale(2);filter:blur(4px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+
+  .text-focus-in{animation:text-focus-in 0.8s cubic-bezier(.55,.085,.68,.53) both}
+  @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}} 

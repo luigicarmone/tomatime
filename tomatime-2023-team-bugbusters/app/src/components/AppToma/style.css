@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;800&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.backgroundToma {
+    /* background-image: url("./Rettangolo\ 10.png"); */
+    background-color: white;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 90%;
+    height: 83%;
+    opacity: 1;
+    box-shadow: 0px 3px 6px #00000040;
+}
+
+.toDoApp {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 110px;
+    height: 40px;
+    font-size: 32px;
+    font-family: 'Sora', sans-serif;
+    color: #D9391E;
+    font-weight: bold;
+}
+
+.listTODO {
+    position: absolute;
+    width: 550%;
+    max-height: 700px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.listDoneWidth {
+    width: 500%;
+    color: #D9391E;
+    font-family: 'Sora', monospace;
+    font-weight: 400;
+
+    align-content: space-around;
+}
+
+.displayBlock,
+.displayBlock2 {
+    align-items: center;
+    padding-top: 2.5%;
+    padding-left: 4%;
+    width: 78%;
+    height: 70px;
+    display: block;
+    color: #D9391E;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Sora', sans-serif;
+    /* margin-bottom: 3%; */
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.displayBlock2 {
+    margin-bottom: 5%;
+}
+
+.listDONE,
+.listTODO::-webkit-scrollbar {
+    vertical-align: right;
+}
+
+
+.toDoneApp {
+    position: absolute;
+    top: 5%;
+    right: 24%;
+    width: 103px;
+    height: 40px;
+    font-size: 32px;
+    font-family: 'Sora', sans-serif;
+    color: #FFDE59;
+    font-weight: bold;
+}
+
+.logoTomatime {
+    background-image: url("./Raggruppa\ 19.png");
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 352px;
+    height: 46px;
+}
+
+.backgroundApp {
+    /* background-image: url("./sfondoGrigio.png"); */
+    background-color: #EEEEEE;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    max-height: 100vh;
+}
+
+
+.rectangleYellow {
+    background-image: url("./Rettangolo\ 26.png");
+    background-repeat: no-repeat;
+    top: 6%;
+    left: 40%;
+    width: 368px;
+    height: 78vh;
+    position: absolute;
+    z-index: 2;
+}
+
+.timeToFocus {
+    position: absolute;
+    top: 6%;
+    left: 20%;
+    width: 236px;
+    height: 35px;
+    font-size: 28px;
+    font-family: 'Sora', sans-serif;
+    color: #D9391E;
+    font-weight: 600;
+}
+
+.workingAt {
+    position: absolute;
+    top: 75%;
+    left: 32%;
+    width: 144px;
+    height: 25px;
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+    color: #D9391E;
+    font-weight: 600;
+}
+
+
+
+.arrowToDo {
+    background-image: url("./Componente\ 10\ –\ 7.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 90%;
+    left: 6%;
+    width: 148px;
+    height: 40px;
+    outline: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.arrowToDoNone {
+    pointer-events: none;
+    background-image: url("./Componente\ ToDo.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 90%;
+    left: 6%;
+    width: 148px;
+    height: 40px;
+    outline: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.arrowToDone {
+    background-image: url("./Componente\ ToDoneAcceso.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 90%;
+    left: 56%;
+    width: 148px;
+    height: 40px;
+    outline: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.arrowToDoneNone {
+    pointer-events: none;
+    background-image: url("./Componente\ ToDone.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 90%;
+    left: 56%;
+    width: 148px;
+    height: 40px;
+    outline: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.arrowToDo:hover {
+    background-color: white;
+    border-radius: 0.6rem;
+}
+
+.arrowToDone:hover {
+    background-image: url("./Componente\ ToDoneGiallo.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-color: white;
+    border-radius: 0.6rem;
+}
+
+
+
+
+/* .arrowToDo:active {
+    background-color: #FFEFAC;
+    border-radius: 6%;
+}
+
+.arrowToDone:active {
+    background-color: #FFEFAC;
+    border-radius: 6%;
+} */
+
+#timer {
+    position: absolute;
+    top: 12%;
+    left: 11%;
+    width: 296px;
+    height: 121px;
+    font-size: 96px;
+    font-family: 'Sora', sans-serif;
+    color: #D9391E;
+    font-weight: 700;
+}
+
+#breakShort {
+    position: absolute;
+    top: 28%;
+    left: 11%;
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+    color: #D9391E;
+    font-weight: 400;
+}
+
+.bottone {
+    background-image: url("./bottone.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 47%;
+    left: 37%;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+}
+
+.bottoneNone {
+    pointer-events: none;
+    background-image: url("./bottone.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 47%;
+    left: 37%;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+}
+
+.rompiPomodoro {
+    background-image: url("./rompiPomodoro.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 47.5%;
+    left: 39%;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+
+}
+
+/* .bottone:active{
+    background-image: url("./Pausa.png");
+    background-repeat: no-repeat;
+} */
+
+.iconCounter {
+    background-image: url("./icon.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5%;
+    right: 12%;
+    width: 318px;
+    height: 41px;
+}
+
+.iconText {
+    padding: 1px;
+    margin-right: 10px;
+    color: #D9391E;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Sora', sans-serif;
+    color: #D9391E;
+    font-weight: bold;
+}
+
+.iconTasksDone {
+    background-image: url("./iconTasksDone.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 38px;
+    height: 41px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.iconTomatoDone {
+    background-image: url("./iconTomato.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 38px;
+    height: 41px;
+    right: 51%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.iconSmashed {
+    background-image: url("./smashedTomatoIcon.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 38px;
+    height: 41px;
+    right: 14%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.iconTasksDone:hover::before {
+    font-family: 'Sora', monospace;
+    content: "Task done";
+    position: absolute;
+    background-color: #dbdbdb;
+    color: #D9391E;
+    width: auto;
+    min-width: 100px;
+    top: -100%;
+    left: -100%;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    transition: all 0.4s ease;
+}
+
+.iconTomatoDone:hover::before {
+    font-family: 'Sora', monospace;
+    content: "Completed";
+    position: absolute;
+    background-color: #dbdbdb;
+    color: #D9391E;
+    width: auto;
+    min-width: 100px;
+    top: -100%;
+    left: -100%;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    transition: all 0.4s ease;
+}
+
+.iconSmashed:hover::before {
+    font-family: 'Sora', monospace;
+    content: "Smashed";
+    position: absolute;
+    background-color: #dbdbdb;
+    color: #D9391E;
+    width: auto;
+    min-width: 100px;
+    top: -100%;
+    left: -100%;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    transition: all 0.4s ease;
+}
+
+/* .iconTasksDone:hover {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .iconTasksDone:hover::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    z-index: -1;
+  } */
+
+/* .numberCounter {
+    top: 52px;
+    right: 27%;
+    width: 40%;
+    height: 32px;
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Sora', sans-serif;
+    color: #D9391E;
+    font-weight: bold;
+    gap: 30%;
+}
+
+#secondNumb {
+    right: 17%;
+}
+
+#thirdNumb {
+    right: 10%;
+} */
+
+.propic {
+    background-image: url("./Componente\ 9\ –\ 11.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.numberCounter {
+    font-size: 25px;
+    font-family: 'Sora', sans-serif;
+    color: #D9391E;
+    font-weight: bold;
+}
+
+.taskCount {
+    top: 5.2%;
+    right: 27%;
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+.tomaCount {
+    top: 5.2%;
+    right: 20%;
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+.brokenCount {
+    top: 5.2%;
+    right: 12.7%;
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 115px;
+    /* aggiunto questo */
+    right: 4%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+}
+
+.buttonEdit,
+.closeButton {
+    position: relative;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: #D9391E;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Sora', sans-serif;
+    border-radius: 8%;
+    margin: 10px;
+    background-color: transparent;
+    display: block;
+}
+
+
+.closeButton {
+    background-color: #D9391E;
+    color: #fff;
+}
+
+.buttonLogout {
+    position: relative;
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: #ff917e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Sora', sans-serif;
+    border-radius: 8%;
+    margin: 10px;
+    display: block;
+}
+
+.buttonTodo,
+.buttonTodo2 {
+    font-weight: 500;
+    border: 2px solid #D9391E;
+    padding: 0 0.32rem;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 5%;
+    height: 2rem;
+    width: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #D9391E;
+}
+
+.addTodo:hover .buttonTodo2 {
+    background-color: #eeeeee;
+    transition: all 0.2s ease;
+}
+
+.buttonTodo2 {
+    background-color: white;
+}
+
+.addTodo {
+    width: 78%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    color: #D9391E;
+    border: 2px dashed #D9391E;
+    border-radius: 0.6rem;
+    transition: all 0.2s ease;
+    max-width: 200%;
+    background-color: white;
+}
+
+.addTodo:hover {
+    border: #D9391E;
+    border-style: solid;
+    border-radius: 0.6rem;
+    background-color: #eeeeee;
+}
+
+.addTodo>p {
+    margin: 0;
+    font: normal normal normal 24px/30px Sora;
+    letter-spacing: 0px;
+    flex: 1;
+    white-space: nowrap;
+}
+
+
+.arrowRight {
+    display: flex;
+    position: relative;
+    top: -45px;
+    left: 70%;
+    /* transform: translateX(-50%); */
+    font-size: 24px;
+    color: #D9391E;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    z-index: 0;
+}
+
+.arrowRightNone {
+    display: none;
+}
+
+.listDOING {
+    background-color: white;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 153%;
+    left: -64%;
+    width: 320px;
+    height: 60px;
+    border-radius: 8%;
+}
+
+.listDOING div {
+    color: #D9391E;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    margin-top: 3%;
+}
+
+.rectangleWhite {
+    background-image: url("./Rettangolo\ 9.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80%;
+    left: 7%;
+    width: 320px;
+    height: 60px;
+}
+
+.checkTodo {
+    font-family: 'Sora', sans-serif;
+    font-weight: 500;
+    background-color: #FFDE59;
+    padding: 0 0.3rem;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 2%;
+    height: 2%;
+}
+
+.greyBackground {
+    background-color: #EEEEEE;
+    width: 78%;
+    height: 70px;
+    border-radius: 1rem;
+    padding-top: 3.3%;
+    margin-bottom: 5%;
+    font-size: 24px;
+}
+
+.hoverBackground:hover {
+    background-color: #EEEEEE;
+    border-radius: 0.6rem;
+    padding-top: 2.5%;
+    padding-left: 4%;
+    width: 78%;
+    height: 70px;
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+
+.arrowRight:hover::before {
+    font-family: 'Sora', monospace;
+    content: "Move to Doing";
+    position: absolute;
+    background-color: #dbdbdb;
+    color: #D9391E;
+    width: auto;
+    min-width: 120px;
+    top: -100%;
+    left: -100%;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    transition: all 0.4s ease
+}
+
+.arrowRight:hover {
+    position: relative;
+    z-index: 1;
+}
+
+.arrowRight:hover::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    z-index: -1;
+}
+
+.hoverAll:hover .hoverBackground {
+    background-color: #EEEEEE;
+    border-radius: 0.6rem;
+    padding-top: 2.5%;
+    padding-left: 4%;
+    width: 78%;
+    height: 70px;
+    transition: all 0.4s ease;
+}
+
+.modalStopApp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    z-index: 900;
+}
+
+.modalStopApp2 {
+    position: absolute;
+    top: 421px;
+    left: 660px;
+    width: 600px;
+    height: 238px;
+    background-color: white;
+}
+
+.animationPomodoro {
+    position: absolute;
+    background-image: url("Tomato ^_^.png");
+    background-repeat: no-repeat;
+    width: 18%;
+    height: 31.5%;
+    top: 50%;
+    left: 59.5%;
+    z-index: 1;
+}
+
+.animationPomodoroNone {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* ANIMAZIONI */
+
+.slide-in-left2 {
+    animation: slide-in-left2 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-left2 {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.slide-out-left2 {
+    animation: slide-out-left2 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes slide-out-left2 {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}

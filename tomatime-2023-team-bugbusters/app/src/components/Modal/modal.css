@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ModalShow {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #2828289b;
+    backdrop-filter: blur(5px);
+    z-index: 5;
+  }
+
+.ModalClose {
+    display: none;
+}
+
+.addTaskModal {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 3px 6px #00000040;
+    left: 50%;
+    width: 32%;
+    height: 36%;
+}
+
+.cancelButtonModal {
+    border: 1px solid #D9391E;
+    border-radius: 0.5rem;
+    color: #D9391E;
+    transition: background-color 0.2s ease;
+    width: 20%;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    margin-left: 43%;
+    margin-right: 5%;
+    padding: 1%;
+    margin-top: 5%;
+}
+  
+.cancelButtonModal:hover {
+    background-color: #D9391E;
+    color: #ffffff;
+}
+  
+.addButtonModal {
+    padding: 1%;
+    background-color: #ae2007;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    width: 20%;
+    
+}
+
+.addButtonModal:hover {
+    background-color: #D9391E;
+}
+  
+.closeIcon{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+  /* .closeIcon:hover{
+
+  } */
+
+.trashIcon{
+    border: 1px solid #D9391E;
+    padding: 5px;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: scale(0.9, 1);
+    border-radius: 0.5rem;
+}
+
+.deleteIcon{
+    background: none;
+    border: none;
+    color: #D9391E;
+    padding: 0.1rem;
+    transition: background-color 0.2s ease;
+    border-radius: 0.5rem;
+    margin-top: 5%;
+    margin-left: 7%;
+    align-items: center;
+}
+
+.deleteIcon:hover {
+    background-color: #D9391E;
+    color: #ffffff;
+}
+
+.textModal {
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #D9391E;
+    color: #D9391E;
+    font-size: 1.1rem;
+    font-weight: 600;
+    outline: none;
+    font-family: 'Sora', sans-serif;
+    width: 74%;
+    margin-left: 5rem;
+}
+
+.textModal::placeholder {
+    color: #D9391E;
+  }
+
+.descriptionModal{
+    margin-left: 3rem;
+    display: block;
+    margin-top: 2.5rem;
+    padding: 0.5rem;
+    border: 1.5px solid #eeeeee;
+    border-radius: 0.5rem;
+    resize: none;
+    outline: none;
+    width: 80%;
+    height: 130px;
+    color: #D9391E;
+    font-weight: 400;
+    font-family: 'Sora', sans-serif;
+  }
+
+.descriptionModal::placeholder {
+    color: #D9391E;
+}
+
+.pencil {
+    display: block;
+    margin-left: 3rem;
+    margin-top: -1.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+  
+.pencil img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tomatime",
+  "private": true,
+  "scripts": {
+    "install-backend": "cd ./backend && npm install",
+    "install-frontend": "cd ./app && npm install",
+    "install": "concurrently 'npm:install-backend' 'npm:install-frontend'",
+    "start-backend": "cd ./backend && npm run dev",
+    "start-frontend": "cd ./app && npm start",
+    "start-mongodb": "cd ./backend && npm run mongo",
+    "start": "concurrently 'npm:start-backend' 'npm:start-frontend'"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "concurrently": "^7.3.0",
+    "front-end": "^0.2.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9"
+  }
+}
